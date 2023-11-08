@@ -117,10 +117,9 @@
     </div>
 
     <script>
-      const audio = document.querySelector(".section_three audio");
       document.addEventListener("click", musicPlay);
       function musicPlay() {
-        audio.play();
+        document.querySelector(".section_three audio").play();
         document.removeEventListener("click", musicPlay);
       }
     </script>
