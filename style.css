@@ -128,9 +128,23 @@ header {
   width: 50%;
 }
 
+.left,
+.right {
+  width: 20%;
+  padding: 0 18px;
+  margin-top: 20px;
+}
+
+marquee {
+  line-height: 2.5;
+}
 @media only screen and (max-width: 1100px) {
   .main {
     width: 95%;
+  }
+  .left,
+  .right {
+    display: none;
   }
   .section_two div {
     font-size: 20px;
