@@ -22,22 +22,34 @@
       <section class="section_two">
         <img src="assets/image/PANDAJAK MJ.gif" alt="PANDAJAK MJ" />
         <div>
-          你!准!备!好!了!吗!<br />
-          接!下!来!<br />
-          就!是!疯!狂!轰!炸!<br />
-          熊!猫!头!<br /><br />
+          <div class="earn" style="display: flex">
+            <div>
+              你!准!备!好!了!吗!<br />
+              接!下!来!<br />
+              就!是!疯!狂!轰!炸!<br />
+              熊!猫!头!<br /><br />
+            </div>
+            <div
+              style="margin-left: 20%; padding: 10px; border: 4px solid black"
+            >
+              RAID TO EARN, HOLD TO EARN<br /><br />
+              宣传=分税钱<br /><br />
+              持币=分税钱
+            </div>
+          </div>
+
           4% TAX<br />2% -> RANDOM HOLDER EVERY 30MIN<br />
           2% -> <a href="#">ZEALY</a> TOP 50 RAIDERS<br />
           0% TEAM TAX!<br /><br />
           4% 税<br />
           2% -> 每半小时随机抽一位持币者<br />
-          2% -> 子儿里(Hyperlink this to our zealy)前50宣发者<br />
+          2% -> <a href="#">子儿里</a>前50宣发者<br />
           0% 队税!
         </div>
       </section>
 
       <section class="section_three">
-        <audio controls autoplay>
+        <audio controls autoplay loop>
           <source
             src="assets/audio/remix-xue-hua-piao-piao-made-with-Voicemod-technology.mp3"
             type="audio/mpeg"
@@ -62,7 +74,7 @@
       </section>
       <section class="section__six">
         <div class="section__six_col1">
-          <img src="assets/image/panda1.jpg" alt="" />
+          <img src="assets/image/panda2.jpg" alt="" />
           <div style="padding: 50px 35px; line-height: 25px">
             今天是熊市的第一百多天，中午外面38度高温，已经3天没吃东西的我漫无目的地在街上游荡，此时头晕目眩，不知道是饿的还是热的？求生的本能使我做了人生最重大的决定，我来到街角的杂货店，把所有的积蓄拿去换了100斤面粉，老板人很好，知道我是抄币的，还多送了我3斤。未来的日子计划每天用面粉做3个馒头，早中晚餐各1个，希望能活到牛市，今天就写到这里，手机快停机了，朋友们再见
           </div>
@@ -74,7 +86,7 @@
         </div>
         <div class="section__six_col2">
           <div style="margin: 35px">
-            <img class="img1" src="assets/image/panda2.JPG" alt="" />
+            <img class="img1" src="assets/image/panda1.jpg" alt="" />
           </div>
           <div class="f1">
             <img src="assets/image/STOP SELLING.png" alt="" />
@@ -106,6 +118,11 @@
 
     <script>
       const audio = document.querySelector(".section_three audio");
+      document.addEventListener("click", musicPlay);
+      function musicPlay() {
+        audio.play();
+        document.removeEventListener("click", musicPlay);
+      }
     </script>
   </body>
 </html>

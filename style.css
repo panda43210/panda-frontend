@@ -59,7 +59,7 @@ header {
 .section_two img {
   width: 30%;
 }
-.section_two div {
+.section_two > div {
   width: 70%;
   font-size: 30px;
   padding: 35px;
@@ -144,5 +144,9 @@ header {
   .memes img {
     width: 50%;
     padding: 2px;
+  }
+  .earn {
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }
